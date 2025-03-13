@@ -7,8 +7,8 @@ node_modules/
 .DS_Store
 
 # Python (Backend) ignores
-server-side/.env
-server-side/cv.txt
+serverSide/.env
+serverSide/cv.txt
 __pycache__/
 *.pyc
 
