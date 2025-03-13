@@ -1,0 +1,187 @@
+
+
+1. Personal Information:
+
+Full Name: Parshu Ram Sharma
+
+Phone Number: +91-8368789794
+
+Whatsapp Number: +91-8744029685
+
+
+Email: parshu13.raam@gmail.com
+
+Location: North East Delhi, Delhi, India - 110094
+
+Date of Birth: 13 Nov, 2004
+
+Marital Status: Single
+
+Languages Known: Hindi and English
+
+2. Summary:
+
+Parshu Ram Sharma is a dynamic Web Development Intern with expertise in full-stack development and Machine Learning. He has a strong academic background in Information Technology and has built multiple AI-powered and web-based projects. He is highly proficient in modern technologies, including Next.js, Neon, Drizzle, Gemini AI, and Tailwind CSS. His interests include AI-driven solutions, web development, and problem-solving.
+
+3. Education Details:
+
+B.Tech in Information Technology (2021 - 2025)
+
+Institute: Guru Tegh Bahadur Institute of Technology
+
+Percentage: 84.98%
+
+12th Grade (CBSE) (2021)
+
+School: Geeta Bal Bharati Senior Secondary School, Delhi
+
+Percentage: 85.20%
+
+10th Grade (CBSE) (2019)
+
+School: R.C.S. Senior Secondary School, Delhi
+
+Percentage: 80.33%
+
+4. Technical Skills:
+
+Programming & Development:
+
+Front-End: React.js, HTML, CSS, JavaScript, Tailwind CSS
+
+Full-Stack: MERN Stack, Next.js
+
+Databases & ORM: PostgreSQL, Neon, Drizzle ORM
+
+Backend Development: Express.js, Node.js
+
+Machine Learning & AI:
+
+AI Tools: OpenAI, Gemini AI
+
+ML Frameworks: Scikit-Learn
+
+Cloud Services: Microsoft Azure
+
+Computer Vision: Machine Vision
+
+Virtual Reality & 3D Development:
+
+VR Technologies: Blender, AR/VR, C#
+
+Networking & Cybersecurity:
+
+Network Simulation: Cisco Packet Tracer, GNS
+
+5. Projects:
+
+Major Projects:
+
+AI Mock Interview Trainer
+
+Tech Stack: Next.js, PostgreSQL, Neon, Drizzle ORM, Gemini AI, Tailwind CSS
+
+Description: A platform that conducts AI-driven video-based mock interviews, analyzes responses, and provides real-time feedback on body language, tone, and verbal responses.
+
+Features:
+
+AI-powered interview simulation
+
+Real-time feedback and performance insights
+
+Personalized training based on past performance
+
+Smooth UI/UX with Next.js and Tailwind CSS
+
+VR Physics Lab Experiment
+
+Tech Stack: AR/VR, Blender, C#
+
+Description: A virtual reality-based interactive physics lab to help students learn experimental concepts in a practical environment.
+
+Publication: ISBN: 978-81-979937-0-1
+
+Full-Stack Blog Application
+
+Tech Stack: MERN Stack
+
+Description: A feature-rich blogging platform that allows users to publish and manage blog posts.
+
+Minor Projects:
+
+Tic Tac Toe Game (HTML, CSS, JavaScript) – GitHub Link
+
+Counter App (HTML, JavaScript) – GitHub Link
+
+FactCloud Intro (HTML, CSS) – GitHub Link
+
+Plan-with-Love (Tour Guide App) (ReactJS, CSS) – GitHub Link
+
+Password Generator (HTML, CSS, JavaScript) – GitHub Link
+
+6. Internships & Work Experience:
+
+Technohacks (Sep 2023)
+
+Key Skills: CSS, HTML, JavaScript
+
+Responsibilities:
+
+Developed responsive web designs
+
+Collaborated with the team to improve UI/UX
+
+7. Research & Publications:
+
+"Interactive Teaching of Lab Experiments Using Virtual Reality"
+
+Publication: ISBN: 978-81-979937-0-1
+
+Mentors: Dr. Amandeep Kaur & Dr. Ambika Tundwal
+
+8. Certifications & Achievements:
+
+Accenture Innovation Challenge 2023 – Certificate of Participation
+
+HackOn With Amazon - Season 4 – Coding Competition Participation
+
+Tata Imagination Challenge 2023 – Problem-Solving and Analysis
+
+Coca-Cola Disrupt Season 3 – Online Assessment Participation
+
+Web Scraping with Beautiful Soup (Simplilearn) – Python Web Scraping Course Completion
+
+9. Leadership & Community Involvement:
+
+Member of Google Developer Student Clubs (GDSC)
+
+Hands-on learning in Google technologies (Firebase, TensorFlow, Flutter, Google Cloud)
+
+Networking with developers and mentors
+
+Participation in hackathons, bootcamps, and speaker sessions
+
+10. Workshops & Training:
+
+Cybersecurity & Web Development (Guru Tegh Bahadur Institute of Technology)
+
+Networking Training (Network Bulls, Cisco Packet Tracer, GNS)
+
+R&D Conclave & Women in STEM Workshop (CSIR-National Physical Laboratory)
+
+11. Extracurricular Activities & Hobbies:
+
+Playing Kabaddi & Cricket
+
+Writing & Music
+
+12. Areas of Improvement:
+
+Gain more experience with backend frameworks like FastAPI
+
+Improve cloud service skills (AWS, GCP)
+
+Contribute to open-source AI and web development projects
+
+Conclusion:
+Parshu Ram Sharma has a well-rounded technical background with expertise in AI-driven web applications. His projects, certifications, and leadership roles demonstrate strong problem-solving abilities and enthusiasm for innovation. With continued learning in backend development, cloud computing, and AI fine-tuning, he can further strengthen his skill set and contribute to cutting-edge technological solutions.
