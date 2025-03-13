@@ -1,0 +1,313 @@
+1 Personal Information:
+
+Full Name: Parshu Ram Sharma
+
+Email: parshu13.raam@gmail.com
+
+Phone Number: +91-8368789794
+
+whatsapp Number: +91-8744029685
+
+Location: North East Delhi, Delhi, India - 110094
+
+Date of Birth: 13 Nov, 2004
+
+Marital Status: Single
+
+Languages Known: Hindi, English
+
+2. Profile Summary:
+
+Parshu Ram Sharma is a highly skilled Full Stack Developer and AI/ML enthusiast with a strong background in AI-driven applications, web development, and virtual reality solutions. Currently pursuing a B.Tech in Information Technology, he has hands-on experience in creating intelligent, scalable, and efficient applications leveraging modern frameworks. His work integrates machine learning models into full-stack applications, delivering data-driven and optimized user experiences.
+
+Key Strengths:
+
+AI & ML-Powered Web Development: Expertise in integrating AI models for real-world applications.
+
+Full-Stack Proficiency: Skilled in Next.js, React.js, Tailwind CSS, and backend technologies like PostgreSQL, Drizzle ORM, and MongoDB.
+
+Virtual Reality & 3D Development: Strong experience in AR/VR development using Blender and C#.
+
+Problem-Solving Mindset: Quick learner with an ability to tackle complex development challenges.
+
+Cloud & API Integration: Proficient in working with cloud services, including Microsoft Azure and OpenAI API.
+
+3. Technical Skills:
+
+Front-End Development:
+
+HTML, CSS, JavaScript, React.js, Next.js, Tailwind CSS
+
+Back-End Development:
+
+Node.js, Express.js, PostgreSQL, MongoDB, Drizzle ORM
+
+Machine Learning & AI:
+
+OpenAI, Gemini AI, Scikit-Learn, AI-based automation, Computer Vision, NLP
+
+Virtual Reality & 3D Development:
+
+Blender, AR/VR, C#
+
+Cloud & DevOps:
+
+Microsoft Azure, Vercel, API Development, Firebase
+
+4. Key Projects:
+
+AI Mock Interview Trainer
+
+Tech Stack: Next.js, PostgreSQL, Neon, Drizzle ORM, Gemini AI, Tailwind CSS
+
+Description: AI-powered platform that conducts video-based mock interviews, analyzes responses, and provides real-time feedback.
+
+Key Features:
+
+AI-driven interview simulations
+
+Real-time feedback on responses, tone, and body language
+
+Performance tracking with structured reports
+
+Adaptive training based on past interactions
+
+Seamless UI/UX built with Next.js and Tailwind
+
+GitHub: AI Mock Interview Trainer
+
+VR Physics Lab Experiment
+
+Tech Stack: AR/VR, Blender, C#
+
+Description: An interactive virtual reality-based physics lab that enhances conceptual learning through simulations.
+
+Publication: ISBN: 978-81-979937-0-1
+
+LinkedIn: VR Physics Lab Experiment
+
+Weather App
+
+Tech Stack: HTML, CSS, JavaScript, Vercel
+
+Description: A real-time weather application with an interactive UI.
+
+GitHub: Weather App
+
+Live Demo: Weather App Live
+
+Plan-with-Love (Tour Guide App)
+
+Tech Stack: React.js, CSS
+
+Description: A tour guide app that showcases destinations through an intuitive card-based interface.
+
+GitHub: Plan-with-Love
+
+5. Internships & Work Experience:
+
+Technohacks (Sep 2023)
+
+Key Skills: CSS, HTML, JavaScript
+
+Responsibilities:
+
+Developed responsive UI components for web applications
+
+Assisted in improving UX/UI and optimizing performance
+
+6. Certifications & Achievements:
+
+Accenture Innovation Challenge 2023 – Certificate of Participation
+
+HackOn With Amazon - Season 4 – Coding Competition Participant
+
+Tata Imagination Challenge 2023 – Problem-Solving & Analysis
+
+Coca-Cola Disrupt Season 3 – Online Assessment Participation
+
+Web Scraping with Beautiful Soup (Simplilearn) – Python Web Scraping Certification
+
+7. Research & Publications:
+
+"Interactive Teaching of Lab Experiments Using Virtual Reality"
+
+Publication: ISBN: 978-81-979937-0-1
+
+Mentors: Dr. Amandeep Kaur & Dr. Ambika Tundwal
+
+8. Leadership & Community Involvement:
+
+Member of Google Developer Student Clubs (GDSC)
+
+Hands-on training in Google technologies (Firebase, TensorFlow, Google Cloud)
+
+Active participation in hackathons, bootcamps, and speaker sessions
+
+Collaborative work on real-world open-source projects
+
+9. Areas of Improvement:
+
+Deepen backend expertise with FastAPI and microservices architecture
+
+Enhance cloud computing skills with AWS and Google Cloud Platform
+
+Contribute to AI/ML open-source projects to expand industry experience
+
+Gain more exposure to cybersecurity principles for AI-driven applications
+
+10. Conclusion:
+
+Parshu Ram Sharma is an innovative developer and AI enthusiast with a passion for creating intelligent digital solutions. His technical expertise spans full-stack development, AI integrations, and VR applications. With a focus on efficiency, scalability, and problem-solving, he is continuously learning and refining his skills to contribute to cutting-edge technological advancements. His blend of academic knowledge, practical experience, and research capabilities makes him an ideal candidate for AI-driven web development and software engineering roles.
+
+Profile Summary:
+
+Parshu Ram Sharma is a highly skilled Full Stack Developer and AI/ML enthusiast with a strong background in AI-driven applications, web development, and virtual reality solutions. Currently pursuing a B.Tech in Information Technology, he has hands-on experience in creating intelligent, scalable, and efficient applications leveraging modern frameworks. His work integrates machine learning models into full-stack applications, delivering data-driven and optimized user experiences.
+
+Key Strengths:
+
+AI & ML-Powered Web Development: Expertise in integrating AI models for real-world applications.
+
+Full-Stack Proficiency: Skilled in Next.js, React.js, Tailwind CSS, and backend technologies like PostgreSQL, Drizzle ORM, and MongoDB.
+
+Virtual Reality & 3D Development: Strong experience in AR/VR development using Blender and C#.
+
+Problem-Solving Mindset: Quick learner with an ability to tackle complex development challenges.
+
+Cloud & API Integration: Proficient in working with cloud services, including Microsoft Azure and OpenAI API.
+
+3. Technical Skills:
+
+Front-End Development:
+
+HTML, CSS, JavaScript, React.js, Next.js, Tailwind CSS
+
+Back-End Development:
+
+Node.js, Express.js, PostgreSQL, MongoDB, Drizzle ORM
+
+Machine Learning & AI:
+
+OpenAI, Gemini AI, Scikit-Learn, AI-based automation, Computer Vision, NLP
+
+Virtual Reality & 3D Development:
+
+Blender, AR/VR, C#
+
+Cloud & DevOps:
+
+Microsoft Azure, Vercel, API Development, Firebase
+
+4. Key Projects:
+
+AI Mock Interview Trainer
+
+Tech Stack: Next.js, PostgreSQL, Neon, Drizzle ORM, Gemini AI, Tailwind CSS
+
+Description: AI-powered platform that conducts video-based mock interviews, analyzes responses, and provides real-time feedback.
+
+Key Features:
+
+AI-driven interview simulations
+
+Real-time feedback on responses, tone, and body language
+
+Performance tracking with structured reports
+
+Adaptive training based on past interactions
+
+Seamless UI/UX built with Next.js and Tailwind
+
+GitHub: AI Mock Interview Trainer
+
+VR Physics Lab Experiment
+
+Tech Stack: AR/VR, Blender, C#
+
+Description: An interactive virtual reality-based physics lab that enhances conceptual learning through simulations.
+
+Publication: ISBN: 978-81-979937-0-1
+
+LinkedIn: VR Physics Lab Experiment
+
+Weather App
+
+Tech Stack: HTML, CSS, JavaScript, Vercel
+
+Description: A real-time weather application with an interactive UI.
+
+GitHub: Weather App
+
+Live Demo: Weather App Live
+
+Plan-with-Love (Tour Guide App)
+
+Tech Stack: React.js, CSS
+
+Description: A tour guide app that showcases destinations through an intuitive card-based interface.
+
+GitHub: Plan-with-Love
+
+5. Internships & Work Experience:
+
+Technohacks (Sep 2023)
+
+Key Skills: CSS, HTML, JavaScript
+
+Responsibilities:
+
+Developed responsive UI components for web applications
+
+Assisted in improving UX/UI and optimizing performance
+
+6. Certifications & Achievements:
+
+Accenture Innovation Challenge 2023 – Certificate of Participation
+
+HackOn With Amazon - Season 4 – Coding Competition Participant
+
+Tata Imagination Challenge 2023 – Problem-Solving & Analysis
+
+Coca-Cola Disrupt Season 3 – Online Assessment Participation
+
+Web Scraping with Beautiful Soup (Simplilearn) – Python Web Scraping Certification
+
+7. Research & Publications:
+
+"Interactive Teaching of Lab Experiments Using Virtual Reality"
+
+Publication: ISBN: 978-81-979937-0-1
+
+Mentors: Dr. Amandeep Kaur & Dr. Ambika Tundwal
+
+8. Leadership & Community Involvement:
+
+Member of Google Developer Student Clubs (GDSC)
+
+Hands-on training in Google technologies (Firebase, TensorFlow, Google Cloud)
+
+Active participation in hackathons, bootcamps, and speaker sessions
+
+Collaborative work on real-world open-source projects
+
+5. HR-Based Interview Questions & Answers:
+
+1. Why should we hire you?
+
+I am a highly motivated developer with expertise in full-stack development and AI-powered applications. My ability to integrate machine learning models into web applications allows me to build intelligent, user-centric solutions. With a strong problem-solving mindset and hands-on experience with Next.js, Tailwind CSS, PostgreSQL, and OpenAI models, I am confident that I can add significant value to your team.
+
+2. What makes you unique?
+
+My unique combination of AI and web development expertise sets me apart. I have worked on AI-driven projects, such as an AI Mock Interview Trainer, that demonstrate my ability to merge machine learning with interactive web experiences. Additionally, my VR-based research project showcases my capability to explore emerging technologies and apply them in innovative ways.
+
+3. Tell us about a challenge you faced in a project and how you overcame it.
+
+During the development of my AI Mock Interview Trainer, one challenge was ensuring real-time feedback with minimal latency. To solve this, I optimized API calls, implemented caching, and leveraged Gemini AI’s efficient model responses. This significantly improved performance and user experience.
+
+4. Where do you see yourself in five years?
+
+In five years, I aim to be a lead AI software engineer, working on groundbreaking AI-powered applications that improve automation and user interactions. I plan to deepen my expertise in AI model training, backend optimizations, and cloud-based scalable solutions.
+
+5. How do you keep up with the latest technology trends?
+
+I actively participate in hackathons, online courses, and Google Developer Student Clubs (GDSC). I also follow AI research papers, open-source projects, and emerging trends in AI and full-stack development to continuously update my skill set.
