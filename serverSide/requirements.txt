@@ -1,0 +1,5 @@
+fastapi
+uvicorn
+requests
+openai  # (If you're using Gemini AI, replace this with `google-generativeai`)
+google-generativeai
