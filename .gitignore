@@ -1,5 +1,6 @@
 *.env
 *.env.local
+serverSide/.env
 
 
 # Node.js & Next.js ignores
