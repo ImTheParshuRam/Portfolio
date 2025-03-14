@@ -33,7 +33,9 @@ app.add_middleware(
 )
 
 # ✅ Fix 3: Ensure File Path is Correct
-file_path = r"D:\extra\portfolio\serverSide\cv.txt"  # Update if needed
+
+file_path = os.path.join(os.path.dirname(__file__), "cv.txt")  # ✅ Correct for all platforms
+
 if not os.path.exists(file_path):
     raise FileNotFoundError(f"File not found: {file_path}")
 
