@@ -15,7 +15,10 @@ serverSide\.env
 serverSide/cv.txt
 __pycache__/
 *.pyc
-
+serverSide\.env
+serverSide\cv.txt
+\*.env
+/*.env
 # Ignore logs and system files
 logs/
 *.log
