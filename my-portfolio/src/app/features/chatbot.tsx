@@ -17,10 +17,6 @@ export default function Chatbot({ isFullScreen, closeChat }: { isFullScreen?: bo
   const [typing, setTyping] = useState(false);
 
   useEffect(() => {
-    setMessages([]);
-  }, []);
-
-  useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
 
@@ -38,7 +34,7 @@ export default function Chatbot({ isFullScreen, closeChat }: { isFullScreen?: bo
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Close chatbot when clicking outside
+  // Close chatbot when clicking outside (Only for floating chatbot)
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (!isFullScreen && isOpen) {
@@ -64,22 +60,24 @@ export default function Chatbot({ isFullScreen, closeChat }: { isFullScreen?: bo
     setTyping(true);
 
     try {
-      const response = await fetch("/api/chat", {
+      const response = await fetch("http://localhost:8000/chat", { 
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ question: input }),
       });
 
+      if (!response.ok) throw new Error("Failed to fetch response");
+
       const data = await response.json();
-      const botMessage = { text: data.response, sender: "bot" as const };
+      const botMessage = { text: data.response || "Sorry, I couldn't fetch a response.", sender: "bot" as const };
 
       setMessages((prevMessages) => [...prevMessages, botMessage]);
     } catch (error) {
+      console.error("Error fetching response:", error);
       setMessages((prevMessages) => [
         ...prevMessages,
-        { text: "Error fetching response.", sender: "bot" as const },
+        { text: "⚠️ Sorry, something went wrong. Try again later.", sender: "bot" as const },
       ]);
-      console.error("Error fetching response:", error);
     }
 
     setLoading(false);
@@ -95,10 +93,12 @@ export default function Chatbot({ isFullScreen, closeChat }: { isFullScreen?: bo
 
   return (
     <div
-      className={isFullScreen ? "fixed inset-0 flex justify-center items-center bg-black bg-opacity-50 z-50" : "fixed right-6 z-50 flex flex-col items-end transition-all duration-300"}
-      style={{
-        bottom: footerVisible ? "120px" : "24px", // Prevents overlap with footer
-      }}
+      className={
+        isFullScreen
+          ? "fixed inset-0 flex justify-center items-center bg-black bg-opacity-50 z-50"
+          : "fixed right-6 z-50 flex flex-col items-end transition-all duration-300"
+      }
+      style={{ bottom: footerVisible ? "120px" : "24px" }}
     >
       {!isFullScreen && (
         <motion.button
@@ -117,13 +117,21 @@ export default function Chatbot({ isFullScreen, closeChat }: { isFullScreen?: bo
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 10 }}
-            className={isFullScreen ? "w-11/12 md:w-3/5 lg:w-2/5 h-5/6 bg-white dark:bg-gray-900 text-black dark:text-white shadow-lg rounded-lg p-4" : "w-80 h-96 bg-white dark:bg-gray-900 text-black dark:text-white shadow-lg rounded-lg p-4 mt-2"}
+            className={
+              isFullScreen
+                ? "w-11/12 md:w-3/5 lg:w-2/5 h-5/6 bg-white dark:bg-gray-900 text-black dark:text-white shadow-lg rounded-lg p-4 relative"
+                : "w-80 h-96 bg-white dark:bg-gray-900 text-black dark:text-white shadow-lg rounded-lg p-4 mt-2"
+            }
           >
-            {isFullScreen && (
-              <button onClick={closeChat} className="absolute top-3 right-3 p-2 bg-gray-200 dark:bg-gray-700 rounded-full">Close
+            {isFullScreen && closeChat && (
+              <button
+                onClick={closeChat}
+                className="absolute top-3 right-3 p-2 bg-gray-200 dark:bg-gray-700 rounded-full hover:bg-gray-400 transition"
+              >Close
                 <X size={20} />
               </button>
             )}
+
             <div className="h-80 overflow-y-auto border-b p-4 space-y-2">
               {messages.map((msg, index) => (
                 <motion.div
@@ -154,13 +162,9 @@ export default function Chatbot({ isFullScreen, closeChat }: { isFullScreen?: bo
               )}
               <div ref={messagesEndRef} />
             </div>
+
             <div className="flex items-center gap-2 p-2">
-              <Input
-                value={input}
-                onChange={(e) => setInput(e.target.value)}
-                onKeyDown={handleKeyDown}
-                placeholder="Ask me anything..."
-              />
+              <Input value={input} onChange={(e) => setInput(e.target.value)} onKeyDown={handleKeyDown} placeholder="Ask me anything..." />
               <Button onClick={sendMessage} disabled={loading}>
                 {loading ? "..." : <Send size={16} />}
               </Button>
