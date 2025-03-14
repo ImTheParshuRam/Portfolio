@@ -1,15 +1,15 @@
 "use client";
 
-import { useState, useEffect, useRef } from 'react';
-import { Input } from '@/components/ui/input';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
-import { Send, Bot, User, X } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { useState, useEffect, useRef } from "react";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Send, Bot, User, X } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Chatbot({ isFullScreen, closeChat }: { isFullScreen?: boolean; closeChat?: () => void }) {
-  const [messages, setMessages] = useState<{ text: string; sender: 'user' | 'bot' }[]>([]);
-  const [input, setInput] = useState('');
+  const [messages, setMessages] = useState<{ text: string; sender: "user" | "bot" }[]>([]);
+  const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [footerVisible, setFooterVisible] = useState(false);
@@ -21,10 +21,10 @@ export default function Chatbot({ isFullScreen, closeChat }: { isFullScreen?: bo
   }, []);
 
   useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
 
-  // Detects if the footer is visible
+  // Detect if the footer is visible
   useEffect(() => {
     const handleScroll = () => {
       const footer = document.querySelector("footer");
@@ -38,7 +38,7 @@ export default function Chatbot({ isFullScreen, closeChat }: { isFullScreen?: bo
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Closes chatbot when clicking outside
+  // Close chatbot when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (!isFullScreen && isOpen) {
@@ -56,25 +56,30 @@ export default function Chatbot({ isFullScreen, closeChat }: { isFullScreen?: bo
   const sendMessage = async () => {
     if (!input.trim()) return;
 
-    const userMessage = { text: input, sender: 'user' };
-    setMessages((prev) => [...prev, userMessage]);
-    setInput('');
+    const userMessage = { text: input, sender: "user" as const };
+    setMessages((prevMessages) => [...prevMessages, userMessage]);
+
+    setInput("");
     setLoading(true);
     setTyping(true);
 
     try {
-      const response = await fetch('http://localhost:8000/chat', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ question: input })
+      const response = await fetch("/api/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ question: input }),
       });
 
       const data = await response.json();
-      const botMessage = { text: data.response, sender: 'bot' };
-      setMessages((prev) => [...prev, botMessage]);
+      const botMessage = { text: data.response, sender: "bot" as const };
+
+      setMessages((prevMessages) => [...prevMessages, botMessage]);
     } catch (error) {
-      setMessages((prev) => [...prev, { text: 'Error fetching response.', sender: 'bot' }]);
-      console.log(error);
+      setMessages((prevMessages) => [
+        ...prevMessages,
+        { text: "Error fetching response.", sender: "bot" as const },
+      ]);
+      console.error("Error fetching response:", error);
     }
 
     setLoading(false);
@@ -115,7 +120,7 @@ export default function Chatbot({ isFullScreen, closeChat }: { isFullScreen?: bo
             className={isFullScreen ? "w-11/12 md:w-3/5 lg:w-2/5 h-5/6 bg-white dark:bg-gray-900 text-black dark:text-white shadow-lg rounded-lg p-4" : "w-80 h-96 bg-white dark:bg-gray-900 text-black dark:text-white shadow-lg rounded-lg p-4 mt-2"}
           >
             {isFullScreen && (
-              <button onClick={closeChat} className="absolute top-3 right-3 p-2 bg-gray-200 dark:bg-gray-700 rounded-full">
+              <button onClick={closeChat} className="absolute top-3 right-3 p-2 bg-gray-200 dark:bg-gray-700 rounded-full">Close
                 <X size={20} />
               </button>
             )}
@@ -123,16 +128,16 @@ export default function Chatbot({ isFullScreen, closeChat }: { isFullScreen?: bo
               {messages.map((msg, index) => (
                 <motion.div
                   key={index}
-                  className={`flex items-center gap-2 ${msg.sender === 'user' ? 'justify-end' : 'justify-start'}`}
+                  className={`flex items-center gap-2 ${msg.sender === "user" ? "justify-end" : "justify-start"}`}
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.3 }}
                 >
-                  {msg.sender === 'bot' && <Bot className="text-gray-500" size={24} />}
-                  <Card className={`max-w-xs p-3 rounded-lg ${msg.sender === 'user' ? 'bg-blue-500 text-white' : 'bg-gray-300 text-black'}`}>
+                  {msg.sender === "bot" && <Bot className="text-gray-500" size={24} />}
+                  <Card className={`max-w-xs p-3 rounded-lg ${msg.sender === "user" ? "bg-blue-500 text-white" : "bg-gray-300 text-black"}`}>
                     <CardContent className="p-2 text-sm">{msg.text}</CardContent>
                   </Card>
-                  {msg.sender === 'user' && <User className="text-blue-500" size={24} />}
+                  {msg.sender === "user" && <User className="text-blue-500" size={24} />}
                 </motion.div>
               ))}
               {typing && (
@@ -157,7 +162,7 @@ export default function Chatbot({ isFullScreen, closeChat }: { isFullScreen?: bo
                 placeholder="Ask me anything..."
               />
               <Button onClick={sendMessage} disabled={loading}>
-                {loading ? '...' : <Send size={16} />}
+                {loading ? "..." : <Send size={16} />}
               </Button>
             </div>
           </motion.div>
