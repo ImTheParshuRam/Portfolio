@@ -60,7 +60,7 @@ export default function Chatbot({ isFullScreen, closeChat }: { isFullScreen?: bo
     setTyping(true);
 
     try {
-      const response = await fetch("http://localhost:8000/chat", { 
+      const response = await fetch("https://portfolio-dy4k.onrender.com", { 
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ question: input }),
