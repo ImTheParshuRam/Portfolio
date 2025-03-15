@@ -13,6 +13,7 @@ export default function Chatbot({ isFullScreen, closeChat }: { isFullScreen?: bo
   const [loading, setLoading] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [footerVisible, setFooterVisible] = useState(false);
+  const [backToTopVisible, setBackToTopVisible] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const [typing, setTyping] = useState(false);
 
@@ -23,16 +24,21 @@ export default function Chatbot({ isFullScreen, closeChat }: { isFullScreen?: bo
   // Detect if the footer is visible
   useEffect(() => {
     const handleScroll = () => {
+      // Check if Footer is visible
       const footer = document.querySelector("footer");
       if (footer) {
         const footerRect = footer.getBoundingClientRect();
         setFooterVisible(footerRect.top < window.innerHeight);
       }
+  
+      // Check if user has scrolled down enough for the "Back to Top" button
+      setBackToTopVisible(window.scrollY > 300); // Show after 300px scroll
     };
-
+  
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+  
 
   // Close chatbot when clicking outside (Only for floating chatbot)
   useEffect(() => {
@@ -96,9 +102,17 @@ export default function Chatbot({ isFullScreen, closeChat }: { isFullScreen?: bo
       className={
         isFullScreen
           ? "fixed inset-0 flex justify-center items-center bg-black bg-opacity-50 z-50"
-          : "fixed right-6 z-50 flex flex-col items-end transition-all duration-300"
+          : "fixed right-6 z-50  flex flex-col items-end transition-all duration-300"
       }
-      style={{ bottom: footerVisible ? "120px" : "24px" }}
+      style={{
+        bottom: backToTopVisible
+          ? footerVisible
+            ? "140px" // If both are visible, move up to avoid footer
+            : "120px" // Only back to top visible
+          : "24px"  // Default position when not visible
+      }}
+      
+      
     >
       {!isFullScreen && (
         <motion.button
@@ -127,8 +141,8 @@ export default function Chatbot({ isFullScreen, closeChat }: { isFullScreen?: bo
               <button
                 onClick={closeChat}
                 className="absolute top-3 right-3 p-2 bg-gray-200 dark:bg-gray-700 rounded-full hover:bg-gray-400 transition"
-              >Close
-                <X size={20} />
+              >
+                Close <X size={20} />
               </button>
             )}
 
