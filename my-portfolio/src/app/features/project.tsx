@@ -19,7 +19,7 @@ const projects = [
     description: "A platform that conducts AI-driven video-based mock interviews, analyzes responses, and provides real-time feedback on body language, tone, and verbal responses.",
     skills: ["Next.js", "PostgreSQL", "Neon", "Drizzle ORM", "Gemini AI", "Tailwind CSS"],
     github: "https://github.com/ImTheParshuRam/aimock",
-    live: "", 
+    live: "https://aimock-ten.vercel.app/", 
     image: "/images/projects/ai_int_img.png", 
   },
   {
