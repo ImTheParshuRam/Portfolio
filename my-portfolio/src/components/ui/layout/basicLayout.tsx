@@ -9,7 +9,7 @@ export default function BasicLayout({ children }: { children: React.ReactNode })
       <Navbar />
       
       {/* Main Content */}
-      <main className="flex-1 p-5 max-w-6xl mx-auto w-full">{children}</main>
+      <main className="flex-1 p-5 max-w-screen mx-auto w-full">{children}</main>
     </div>
   );
 }
