@@ -198,7 +198,7 @@ export default function Skills() {
                   className="group relative"
                 >
                   <div className="absolute inset-0 bg-orange-200/40 dark:bg-gradient-to-r dark:from-purple-500/20 dark:to-cyan-500/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300" />
-                  <div className="relative p-6 bg-amber-50/90 dark:bg-gradient-to-br dark:from-purple-900/40 dark:via-indigo-900/40 dark:to-slate-900/40 backdrop-blur-xl rounded-2xl border border-orange-300/50 dark:border-purple-400/30 group-hover:border-orange-400/70 dark:group-hover:border-cyan-400/50 transition-all duration-300 shadow-lg shadow-orange-200/20 dark:shadow-purple-500/10">
+                  <div className="relative p-6 bg-amber-50/90 dark:bg-slate-800/95 backdrop-blur-xl rounded-2xl border border-orange-300/50 dark:border-slate-600/80 group-hover:border-orange-400/70 dark:group-hover:border-cyan-400/60 transition-all duration-300 shadow-lg shadow-orange-200/20 dark:shadow-purple-500/10">
                     <div className="flex items-center gap-4">
                       <div className="p-3 bg-gradient-to-r from-orange-500 to-pink-500 dark:from-cyan-500 dark:to-purple-500 rounded-xl shadow-lg">
                         <achievement.icon className="w-6 h-6 text-white" />
@@ -220,7 +220,7 @@ export default function Skills() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="h-[600px] overflow-y-auto scrollbar-thin scrollbar-thumb-orange-400 dark:scrollbar-thumb-purple-500 scrollbar-track-transparent pr-4"
+            className="h-[600px] overflow-y-auto scrollbar-thin scrollbar-thumb-orange-400 dark:scrollbar-thumb-cyan-400 scrollbar-track-orange-100/50 dark:scrollbar-track-slate-800/50 pr-4"
           >
             <div className="space-y-8">
               {skillCategories.map((category, categoryIndex) => (
@@ -232,7 +232,7 @@ export default function Skills() {
                   transition={{ duration: 0.6, delay: categoryIndex * 0.1 }}
                   className="group"
                 >
-                  <div className="relative bg-amber-50/90 dark:bg-gradient-to-br dark:from-purple-900/20 dark:via-indigo-900/20 dark:to-slate-900/20 backdrop-blur-xl rounded-3xl p-8 border border-orange-300/50 dark:border-purple-400/30 group-hover:border-orange-400/70 dark:group-hover:border-cyan-400/50 transition-all duration-500 shadow-lg shadow-orange-200/20 dark:shadow-purple-500/10">
+                  <div className="relative bg-amber-50/90 dark:bg-slate-800/95 backdrop-blur-xl rounded-3xl p-8 border border-orange-300/50 dark:border-purple-400/30 group-hover:border-orange-400/70 dark:group-hover:border-cyan-400/50 transition-all duration-500 shadow-lg shadow-orange-200/20 dark:shadow-purple-500/10">
                     {/* Category Header */}
                     <div className="flex items-center gap-4 mb-8">
                       <div className={`p-4 bg-gradient-to-r ${category.color} rounded-2xl shadow-lg`}>
@@ -255,7 +255,7 @@ export default function Skills() {
                           onMouseLeave={() => setHoveredSkill(null)}
                           className="group/skill relative"
                         >
-                          <div className="relative p-4 bg-orange-100/60 dark:bg-gradient-to-br dark:from-purple-500/10 dark:to-cyan-500/10 backdrop-blur-xl rounded-2xl border border-orange-300/40 dark:border-purple-400/20 group-hover/skill:border-orange-400/60 dark:group-hover/skill:border-cyan-400/40 transition-all duration-300 shadow-sm shadow-orange-100/20 dark:shadow-purple-500/5">
+                          <div className="relative p-4 bg-orange-100/60 dark:bg-slate-700/80 backdrop-blur-xl rounded-2xl border border-orange-300/40 dark:border-slate-600/80 group-hover/skill:border-orange-400/60 dark:group-hover/skill:border-cyan-400/60 transition-all duration-300 shadow-sm shadow-orange-100/20 dark:shadow-purple-500/5">
                             {/* Skill Icon & Name */}
                             <div className="flex items-center gap-3 mb-3">
                               <div className="w-8 h-8 relative">

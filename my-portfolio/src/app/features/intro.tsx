@@ -1,7 +1,6 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
-import Image from "next/image"
 import Typed from "typed.js"
 import { motion } from "framer-motion"
 import { Download, Mail, Github, Linkedin, ArrowRight, Sparkles, Code, Zap, Flame, Rocket, Crown } from "lucide-react"
@@ -85,6 +84,15 @@ export default function HeroSection() {
     { left: 85, top: 45 },
     { left: 15, top: 35 },
   ]
+
+  const handleDownloadCV = () => {
+    const link = document.createElement('a');
+    link.href = '/Parshu_Ram_CV.pdf';
+    link.download = 'Parshu_Ram_CV.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white dark:bg-gradient-to-br dark:from-purple-950 dark:via-indigo-950 dark:to-slate-950">
@@ -170,7 +178,7 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="inline-flex items-center gap-3 px-6 py-3 bg-amber-100/80 dark:bg-gradient-to-r dark:from-purple-500/20 dark:via-pink-500/20 dark:to-cyan-500/20 backdrop-blur-xl rounded-full border border-orange-300/60 dark:border-purple-400/30 group hover:border-orange-400/80 dark:hover:border-purple-400/60 transition-all duration-500 shadow-lg shadow-orange-200/30 dark:shadow-purple-500/10"
+              className="inline-flex items-center gap-3 px-6 py-3 bg-amber-100/80 dark:bg-slate-800/95 backdrop-blur-xl rounded-full border border-orange-300/60 dark:border-slate-600/80 group hover:border-orange-400/80 dark:hover:border-cyan-400/60 transition-all duration-500 shadow-lg shadow-orange-200/30 dark:shadow-purple-500/10"
             >
               <motion.div
                 animate={{
@@ -184,9 +192,7 @@ export default function HeroSection() {
               >
                 <Crown className="w-5 h-5 text-orange-600 dark:text-cyan-400" />
               </motion.div>
-              <span className="text-sm font-bold text-orange-700 dark:bg-gradient-to-r dark:from-cyan-400 dark:to-purple-400 dark:bg-clip-text dark:text-transparent">
-                Welcome to the Future
-              </span>
+              <span className="text-sm font-bold text-orange-700 dark:text-white">Welcome to the Future</span>
             </motion.div>
 
             {/* Clean Stylish Main Heading */}
@@ -300,24 +306,24 @@ export default function HeroSection() {
                     label: "Technologies",
                     icon: Code,
                     color: "from-orange-500 to-pink-500 dark:from-cyan-400 dark:to-blue-500",
-                    bgColor: "bg-orange-50/80 dark:bg-gradient-to-r dark:from-purple-900/40 dark:to-cyan-900/40",
-                    borderColor: "border-orange-300 dark:border-cyan-400/30",
+                    bgColor: "bg-orange-50/80 dark:bg-slate-800/95",
+                    borderColor: "border-orange-300 dark:border-slate-600/80",
                   },
                   {
                     number: "10+",
                     label: "Projects",
                     icon: Sparkles,
                     color: "from-pink-500 to-red-500 dark:from-purple-400 dark:to-pink-500",
-                    bgColor: "bg-pink-50/80 dark:bg-gradient-to-r dark:from-purple-900/40 dark:to-pink-900/40",
-                    borderColor: "border-pink-300 dark:border-purple-400/30",
+                    bgColor: "bg-pink-50/80 dark:bg-slate-800/95",
+                    borderColor: "border-pink-300 dark:border-slate-600/80",
                   },
                   {
                     number: "2+",
                     label: "Years",
                     icon: Zap,
                     color: "from-yellow-500 to-orange-500 dark:from-pink-400 dark:to-red-500",
-                    bgColor: "bg-yellow-50/80 dark:bg-gradient-to-r dark:from-pink-900/40 dark:to-red-900/40",
-                    borderColor: "border-yellow-300 dark:border-pink-400/30",
+                    bgColor: "bg-yellow-50/80 dark:bg-slate-800/95",
+                    borderColor: "border-yellow-300 dark:border-slate-600/80",
                   },
                 ].map((stat, index) => (
                   <motion.div
@@ -330,7 +336,7 @@ export default function HeroSection() {
                   >
                     <div className="absolute inset-0 bg-orange-300/40 dark:bg-gradient-to-r dark:from-purple-500/20 dark:to-cyan-500/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300" />
                     <div
-                      className={`relative flex items-center gap-3 px-6 py-4 ${stat.bgColor} backdrop-blur-xl rounded-2xl border ${stat.borderColor} group-hover:border-opacity-80 transition-all duration-300 shadow-lg shadow-orange-200/20 dark:shadow-purple-500/10`}
+                      className={`relative flex items-center gap-3 px-6 py-4 ${stat.bgColor} backdrop-blur-xl rounded-2xl border ${stat.borderColor} group-hover:border-opacity-80 dark:group-hover:border-cyan-400/60 transition-all duration-300 shadow-lg shadow-orange-200/20 dark:shadow-purple-500/10`}
                     >
                       <div
                         className={`p-2 bg-gradient-to-r ${stat.color} rounded-lg shadow-lg group-hover:scale-110 transition-transform`}
@@ -369,7 +375,8 @@ export default function HeroSection() {
               <motion.button
                 whileHover={{ scale: 1.05, y: -3 }}
                 whileTap={{ scale: 0.95 }}
-                className="group px-8 py-4 border-2 border-orange-400/80 dark:border-cyan-400/50 rounded-2xl text-amber-900 dark:text-white font-bold backdrop-blur-xl hover:bg-orange-100/60 dark:hover:bg-cyan-400/10 hover:border-orange-500 dark:hover:border-cyan-400 transition-all duration-300 flex items-center gap-2 justify-center relative overflow-hidden shadow-lg shadow-orange-200/20 dark:shadow-cyan-500/10"
+                className="group px-8 py-4 border-2 border-orange-400/80 dark:border-cyan-400/50 rounded-2xl text-amber-900 dark:text-white font-bold backdrop-blur-xl hover:bg-orange-100/60 dark:hover:bg-slate-800/60 hover:border-orange-500 dark:hover:border-cyan-400 transition-all duration-300 flex items-center gap-2 justify-center relative overflow-hidden shadow-lg shadow-orange-200/20 dark:shadow-cyan-500/10"
+                onClick={handleDownloadCV}
               >
                 <Download className="w-5 h-5 group-hover:animate-bounce relative z-10" />
                 <span className="relative z-10">Download CV</span>
@@ -391,7 +398,7 @@ export default function HeroSection() {
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.2, y: -5 }}
                   whileTap={{ scale: 0.9 }}
-                  className={`group relative p-4 bg-amber-100/60 dark:bg-gradient-to-r dark:from-purple-500/20 dark:to-cyan-500/20 backdrop-blur-xl rounded-2xl border border-orange-300/50 dark:border-purple-400/30 text-amber-800 dark:text-white ${color} transition-all duration-300 shadow-lg shadow-orange-200/20 dark:shadow-purple-500/10`}
+                  className={`group relative p-4 bg-amber-100/60 dark:bg-slate-800/95 backdrop-blur-xl rounded-2xl border border-orange-300/50 dark:border-slate-600/80 text-amber-800 dark:text-white ${color} transition-all duration-300 shadow-lg shadow-orange-200/20 dark:shadow-purple-500/10`}
                   aria-label={label}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -434,15 +441,7 @@ export default function HeroSection() {
                 whileHover={{ scale: 1.05 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
-                <Image
-                  src="/images/userAsset/good.jpg"
-                  alt="Parshu Ram Sharma"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 384px"
-                  priority
-                />
-                
+                <img src="/images/userAsset/good.jpg" alt="Parshu Ram Sharma" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-amber-900/30 via-transparent to-orange-400/20 dark:from-purple-900/50 dark:via-transparent dark:to-cyan-400/20"></div>
               </motion.div>
 

@@ -48,14 +48,14 @@ export default function Contact() {
     {
       icon: Mail,
       title: "Email",
-      value: "parshu13.raam@gmail.com",
-      href: "mailto:parshu13.raam@gmail.com",
+      value: "sharmaparshuram2004@gmail.com",
+      href: "mailto:sharmaparshuram2004@gmail.com",
     },
     {
       icon: Phone,
       title: "Phone",
-      value: "+91 XXX XXX XXXX",
-      href: "tel:+91XXXXXXXXXX",
+      value: "+91 8368789794",
+      href: "tel:+918368789794",
     },
     {
       icon: MapPin,
